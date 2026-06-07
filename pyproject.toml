@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "qiwei-qunfa-mcp"
+version = "0.1.0"
+description = "MCP stdio server for the Qiwei broadcast backend API."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+authors = [
+  { name = "Yituike" }
+]
+dependencies = []
+
+[project.scripts]
+qiwei-qunfa-mcp = "qiwei_qunfa_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/qiwei_qunfa_mcp"]
