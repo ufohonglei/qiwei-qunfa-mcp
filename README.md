@@ -63,7 +63,6 @@ pipx install "git+https://github.com/ufohonglei/qiwei-qunfa-mcp.git"
         "qiwei-qunfa-mcp"
       ],
       "env": {
-        "QIWEI_API_BASE": "https://api.your-domain.com",
         "QIWEI_API_TOKEN": "qwmcp_xxx"
       }
     }
@@ -80,13 +79,14 @@ pipx install "git+https://github.com/ufohonglei/qiwei-qunfa-mcp.git"
       "command": "qiwei-qunfa-mcp",
       "args": [],
       "env": {
-        "QIWEI_API_BASE": "https://api.your-domain.com",
         "QIWEI_API_TOKEN": "qwmcp_xxx"
       }
     }
   }
 }
 ```
+
+默认后端地址是 `https://xapi.ytk.life`，普通用户只需要配置 `QIWEI_API_TOKEN`。如果要连接其他私有后端，可以额外设置 `QIWEI_API_BASE` 覆盖默认地址。
 
 旧的源码路径配置仍然可用：
 
@@ -99,7 +99,6 @@ pipx install "git+https://github.com/ufohonglei/qiwei-qunfa-mcp.git"
         "/path/to/qiwei-qunfa-mcp/server.py"
       ],
       "env": {
-        "QIWEI_API_BASE": "http://127.0.0.1:8000",
         "QIWEI_API_TOKEN": "qwmcp_xxx"
       }
     }
