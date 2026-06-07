@@ -14,7 +14,7 @@ from urllib.request import Request, urlopen
 
 from qiwei_qunfa_mcp import __version__
 
-API_BASE = os.getenv("QIWEI_API_BASE", "http://127.0.0.1:8000").rstrip("/")
+API_BASE = os.getenv("QIWEI_API_BASE", "https://xapi.ytk.life").rstrip("/")
 API_TOKEN = os.getenv("QIWEI_API_TOKEN", "")
 API_PREFIX = "/api/v1/wecom-broadcast"
 
